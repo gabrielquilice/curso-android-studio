@@ -1,0 +1,2 @@
+rootProject.name = "frases-do-dia"
+include ':app'
