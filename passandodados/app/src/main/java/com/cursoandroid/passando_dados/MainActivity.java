@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.Serializable;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btnEnviar;
@@ -19,9 +21,12 @@ public class MainActivity extends AppCompatActivity {
         btnEnviar = findViewById(R.id.button);
 
         btnEnviar.setOnClickListener(v -> {
+            Usuario usuario = new Usuario("Usuario1", "teste@teste.com");
+
             Intent itDados = new Intent(getApplicationContext(), SegundaActivity.class);
             itDados.putExtra("nome", "Teste");
             itDados.putExtra("idade", 20);
+            itDados.putExtra("objeto", (Serializable) usuario);
             startActivity(itDados);
         });
     }

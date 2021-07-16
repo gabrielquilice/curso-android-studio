@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.concurrent.TimeUnit;
+
 public class SegundaActivity extends AppCompatActivity {
 
     private TextView txtNome, txtIdade;
+    private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,5 +22,15 @@ public class SegundaActivity extends AppCompatActivity {
 
         txtNome.setText( getIntent().getStringExtra("nome") );
         txtIdade.setText( String.valueOf(getIntent().getIntExtra("idade", 0)) );
+
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        usuario = (Usuario) getIntent().getSerializableExtra("objeto");
+
+        txtNome.setText( usuario.getEmail() );
     }
 }
