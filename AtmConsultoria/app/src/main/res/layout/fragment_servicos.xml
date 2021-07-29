@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context=".ui.servicos.ServicosFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistema de gestão de qualidade"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Maecenas mattis tincidunt mauris, at vehicula eros feugiat at. In pellentesque odio at felis aliquet posuere. Integer aliquet vehicula auctor. Aenean rhoncus nulla sit amet leo suscipit, nec vulputate lacus feugiat. Suspendisse potenti. Phasellus vel tortor eu lacus semper viverra sit amet id lorem. Cras faucibus est ligula, at suscipit mi tempor accumsan. Duis non ante tempus, tempus dui malesuada, tempus nulla. Curabitur pulvinar odio ut congue malesuada. Mauris eget efficitur nibh. Proin auctor eu metus luctus laoreet. Sed consectetur neque justo, ut aliquam augue auctor eget. Integer id aliquam metus. Vestibulum et risus et massa varius gravida. Sed a venenatis libero, eleifend ornare sapien." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indicadores de desempenho"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Quisque mollis arcu mi. Aenean ac massa nec quam pharetra vulputate. Etiam ac purus eu diam facilisis rhoncus. Morbi nec mattis turpis. Vivamus ornare ac elit vel pharetra. In imperdiet ligula vel odio condimentum tempus et ac arcu. Quisque id mollis leo, vitae tincidunt quam. Suspendisse mollis sollicitudin nulla, vel scelerisque arcu. Praesent eget justo consequat, bibendum nibh vulputate, tempor dui. Etiam placerat orci vitae nisl viverra sollicitudin. Sed ac sollicitudin nulla. Ut sit amet risus nec massa hendrerit tristique eget quis nisi. Sed convallis, orci vel gravida egestas, nisi lectus luctus massa, in maximus ex sapien et enim. Duis eleifend et velit sed ornare." />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

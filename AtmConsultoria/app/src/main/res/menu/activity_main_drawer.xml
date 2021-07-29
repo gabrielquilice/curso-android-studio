@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_inbox_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/ic_assignment_24"
+            android:title="@string/menu_assignment" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_people_24"
+            android:title="@string/menu_people" />
+
+        <item android:title="Entre em contato">
+            <menu>
+                <item
+                    android:id="@+id/nav_email"
+                    android:icon="@drawable/ic_email_24"
+                    android:title="@string/menu_email" />
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_info_24"
+                    android:title="@string/menu_info" />
+            </menu>
+        </item>
+    </group>
+</menu>
